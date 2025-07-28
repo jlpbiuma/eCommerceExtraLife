@@ -1,0 +1,85 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Discover the World of Board Games",
+      "subtitle": "Find your next favorite game from our curated collection",
+      "cta": "Browse Games"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "selection": {
+        "title": "Vast Selection",
+        "description": "From classic family games to modern strategy masterpieces"
+      },
+      "quality": {
+        "title": "Quality Guaranteed",
+        "description": "All games are authentic and brand new"
+      },
+      "shipping": {
+        "title": "Fast Shipping",
+        "description": "Quick delivery to your doorstep"
+      }
+    },
+    "categories": {
+      "title": "Popular Categories",
+      "strategy": "Strategy",
+      "family": "Family",
+      "party": "Party Games",
+      "card": "Card Games",
+      "cooperative": "Cooperative"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest games and exclusive offers",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    }
+  },
+  "common": {
+    "theme": {
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "language": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to your account",
+      "subtitle": "Don't have an account?",
+      "register_link": "Register now",
+      "email_label": "Email address",
+      "email_placeholder": "Enter your email",
+      "password_label": "Password",
+      "password_placeholder": "Enter your password",
+      "submit": "Sign in",
+      "loading": "Signing in...",
+      "error": "Invalid email or password"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Already have an account?",
+      "login_link": "Sign in",
+      "first_name_label": "First name",
+      "first_name_placeholder": "Enter your first name",
+      "last_name_label": "Last name",
+      "last_name_placeholder": "Enter your last name",
+      "email_label": "Email address",
+      "email_placeholder": "Enter your email",
+      "password_label": "Password",
+      "password_placeholder": "Create a password",
+      "confirm_password_label": "Confirm password",
+      "confirm_password_placeholder": "Confirm your password",
+      "submit": "Create account",
+      "loading": "Creating account...",
+      "success": "Account created successfully!",
+      "error": {
+        "passwords_dont_match": "Passwords do not match",
+        "email_exists": "Email already exists",
+        "generic": "Something went wrong"
+      }
+    }
+  }
+} 

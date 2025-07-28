@@ -1,8 +1,8 @@
 // This is your Prisma schema file
 datasource db {
-  provider = "postgresql"
-  url      = env("SUPABASE_URL")
-  directUrl = env("SUPABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 generator client {
@@ -64,7 +64,7 @@ model Product {
   ageRating    Int?        @map("age_rating")
   weight       Decimal?     @db.Decimal(10, 2)
   dimensions   String?
-  publisher    String?
+  publisher    String
   isActive     Boolean      @default(true) @map("is_active")
   inventory    Inventory?
   orderItems   OrderItem[]
@@ -72,6 +72,7 @@ model Product {
   createdAt    DateTime     @default(now()) @map("created_at") @db.Timestamptz
   updatedAt    DateTime     @default(now()) @map("updated_at") @db.Timestamptz
 
+  @@unique([name, publisher])
   @@map("products")
 }
 

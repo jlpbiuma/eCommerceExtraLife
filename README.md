@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Board Games Platform
 
-## Getting Started
+A modern e-commerce platform specialized in board games, built with Next.js, Prisma, and Supabase.
 
-First, run the development server:
+## Database Commands
+
+### Prisma Commands
 
 ```bash
+# Push schema changes to the database
+npx prisma db push
+```
+This command synchronizes your Prisma schema with the database. It:
+- Creates new tables defined in your schema
+- Adds new fields to existing tables
+- Updates field types and constraints
+- Creates indexes and unique constraints
+
+```bash
+# Generate Prisma Client
+npx prisma generate
+```
+This command:
+- Generates the Prisma Client based on your schema
+- Updates TypeScript types for your models
+- Must be run after any schema changes
+
+```bash
+# Seed the database
+npm run prisma:seed
+```
+This command:
+- Populates the database with initial data
+- Creates default roles (admin, customer)
+- Adds sample categories and products
+- Creates test users
+- Adds sample reviews
+
+```bash
+# Open Prisma Studio
+npx prisma studio
+```
+This launches a visual database browser where you can:
+- View and edit data in your database
+- Add new records
+- Delete existing records
+- Filter and sort data
+
+### Development Commands
+
+```bash
+# Install dependencies
+npm install
+```
+Installs all necessary packages defined in package.json
+
+```bash
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Starts the development server with:
+- Hot reloading
+- Error reporting
+- Development environment settings
+
+```bash
+# Build for production
+npm run build
+```
+Creates an optimized production build:
+- Minifies JavaScript
+- Optimizes images
+- Generates static pages where possible
+
+```bash
+# Start production server
+npm run start
+```
+Runs the application in production mode
+
+```bash
+# Run linter
+npm run lint
+```
+Checks code for:
+- Style consistency
+- Potential errors
+- Best practices
+
+## Environment Variables
+
+The application requires the following environment variables:
+
+```env
+# Database connection (Supabase)
+DATABASE_URL="postgres://postgres.[project-id]:[password]@aws-0-[region].pooler.supabase.com:5432/postgres"
+DIRECT_URL="postgres://postgres.[project-id]:[password]@aws-0-[region].pooler.supabase.com:5432/postgres"
+
+# Supabase API
+SUPABASE_URL="your-project-url"
+SUPABASE_API_KEY="your-api-key"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Database Schema
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The database includes the following models:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Users**: Store customer and admin information
+- **Roles**: Define user permissions (admin, customer)
+- **Products**: Board game details including:
+  - Basic info (name, description, price)
+  - Game specifics (players, play time, age rating)
+  - Physical attributes (weight, dimensions)
+- **Categories**: Organize games by type
+- **Inventory**: Track product stock levels
+- **Orders**: Track customer purchases
+- **Order Items**: Individual items in orders
+- **Reviews**: Customer feedback and ratings
 
-## Learn More
+## Initial Data
 
-To learn more about Next.js, take a look at the following resources:
+The seeder creates:
+- 2 roles (admin, customer)
+- 5 game categories
+- 2 sample products (Catan, Monopoly)
+- 2 users (admin and customer)
+- Sample inventory and review data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request

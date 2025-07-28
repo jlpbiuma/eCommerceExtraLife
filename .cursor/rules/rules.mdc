@@ -1,0 +1,18 @@
+---
+alwaysApply: true
+---
+Never ask for the .env file. Just ask the user if there is a key missing.
+Using next 15
+Use the app folder structure to automatically enable the routing system.
+Use the i18n standard which is been saving in the messages folder.
+Use the supabase for the database.
+Use the prisma for the database.
+Use the next-themes for the theme provider.
+Use the next-intl for the internationalization.
+Use the next-auth for the authentication.
+Use the next-seo for the seo.
+Use the next-pwa for the progressive web app.
+Use the next-sitemap for the sitemap.
+Each component should not have more than 160 lines of code.
+Use shadcn for the components.
+Use lucide-react for the icons.

@@ -1,0 +1,85 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Descubre el Mundo de los Juegos de Mesa",
+      "subtitle": "Encuentra tu próximo juego favorito en nuestra colección seleccionada",
+      "cta": "Explorar Juegos"
+    },
+    "features": {
+      "title": "Por Qué Elegirnos",
+      "selection": {
+        "title": "Gran Selección",
+        "description": "Desde juegos familiares clásicos hasta obras maestras modernas de estrategia"
+      },
+      "quality": {
+        "title": "Calidad Garantizada",
+        "description": "Todos los juegos son auténticos y nuevos"
+      },
+      "shipping": {
+        "title": "Envío Rápido",
+        "description": "Entrega rápida a tu puerta"
+      }
+    },
+    "categories": {
+      "title": "Categorías Populares",
+      "strategy": "Estrategia",
+      "family": "Familia",
+      "party": "Juegos de Fiesta",
+      "card": "Juegos de Cartas",
+      "cooperative": "Cooperativos"
+    },
+    "newsletter": {
+      "title": "Mantente Actualizado",
+      "description": "Suscríbete a nuestro boletín para recibir los últimos juegos y ofertas exclusivas",
+      "placeholder": "Ingresa tu email",
+      "button": "Suscribirse"
+    }
+  },
+  "common": {
+    "theme": {
+      "light": "Modo Claro",
+      "dark": "Modo Oscuro"
+    },
+    "language": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Inicia sesión en tu cuenta",
+      "subtitle": "¿No tienes una cuenta?",
+      "register_link": "Regístrate ahora",
+      "email_label": "Correo electrónico",
+      "email_placeholder": "Ingresa tu correo electrónico",
+      "password_label": "Contraseña",
+      "password_placeholder": "Ingresa tu contraseña",
+      "submit": "Iniciar sesión",
+      "loading": "Iniciando sesión...",
+      "error": "Correo electrónico o contraseña inválidos"
+    },
+    "register": {
+      "title": "Crea tu cuenta",
+      "subtitle": "¿Ya tienes una cuenta?",
+      "login_link": "Inicia sesión",
+      "first_name_label": "Nombre",
+      "first_name_placeholder": "Ingresa tu nombre",
+      "last_name_label": "Apellido",
+      "last_name_placeholder": "Ingresa tu apellido",
+      "email_label": "Correo electrónico",
+      "email_placeholder": "Ingresa tu correo electrónico",
+      "password_label": "Contraseña",
+      "password_placeholder": "Crea una contraseña",
+      "confirm_password_label": "Confirmar contraseña",
+      "confirm_password_placeholder": "Confirma tu contraseña",
+      "submit": "Crear cuenta",
+      "loading": "Creando cuenta...",
+      "success": "¡Cuenta creada exitosamente!",
+      "error": {
+        "passwords_dont_match": "Las contraseñas no coinciden",
+        "email_exists": "El correo electrónico ya existe",
+        "generic": "Algo salió mal"
+      }
+    }
+  }
+} 
